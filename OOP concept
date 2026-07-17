@@ -1,0 +1,100 @@
+#Class and object demonstration
+class car:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def display_info(self):
+        return f"{self.year} {self.make} {self.model}"
+
+car1=car("German", "BMW", 2020)
+print(car1.display_info())
+
+#Demonstration of Encapsulation
+
+class Employee:
+    def __init__(self):
+        self.name = "Shriram"      # Public member
+        self._department = "CSE"   # Protected member
+        self.__salary = 50000      # Private member
+
+    # Public method to access private member
+    def display(self):
+        print("Name:", self.name)
+        print("Department:", self._department)
+        print("Salary:", self.__salary)
+
+
+# Create object
+emp = Employee()
+
+# Accessing public member
+print("Public Member:", emp.name)
+
+# Accessing protected member
+print("Protected Member:", emp._department)
+
+# Accessing private member (Not Allowed)
+# print(emp.__salary)   # AttributeError
+# Accessing private member through public method
+emp.display()
+
+#Inheritance demonstration
+class Vehicle:
+    def __init__(self, brand, color):
+        self.brand = brand
+        self.color = color
+
+    def display_details(self):
+        return f"Brand: {self.brand}, Color: {self.color}"
+
+class Car(Vehicle):
+    def __init__(self, brand, color, doors):
+        super().__init__(brand, color)
+        self.doors = doors
+
+    def display_details(self):
+        return f"{super().display_details()}, Doors: {self.doors}"
+
+class Bike(Vehicle):
+    def __init__(self, brand, color, bike_type):
+        super().__init__(brand, color)
+        self.bike_type = bike_type
+
+    def display_details(self):
+        return f"{super().display_details()}, Type: {self.bike_type}"
+
+
+car_obj = Car("Toyota", "Red", 4)
+bike_obj = Bike("Honda", "Black", "Sports")
+
+print(car_obj.display_details())
+print(bike_obj.display_details())
+
+#Polymorphism demonstration
+
+class Animal:
+    def sound(self):
+        return "Some animal sound"
+
+
+class Dog(Animal):
+    def sound(self):
+        return "Bark"
+
+
+class Cat(Animal):
+    def sound(self):
+        return "Meow"
+
+
+def show_sound(animal):
+    print(animal.sound())
+
+
+dog = Dog()
+cat = Cat()
+
+show_sound(dog)
+show_sound(cat)
