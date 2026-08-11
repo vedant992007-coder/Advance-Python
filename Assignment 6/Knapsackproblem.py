@@ -70,18 +70,3 @@ ans2, picked2 = knap_top(weights, values, bag_capacity)
 print("Top down result")
 print("Max value:", ans2)
 print("Items picked:", picked2)
-
-#Output
-'''0/1 knapsack problem
-Items in the bag:
-Item 1 : weight = 2 , value = 10
-Item 2 : weight = 1 , value = 10
-Item 3 : weight = 3 , value = 20
-Item 4 : weight = 2 , value = 15
-Bag capacity: 5
-Bottom up result
-Max value: 37
-Items picked: [1, 2, 4]
-Top down result
-Max value: 37
-Items picked: [1, 2, 4]'''
