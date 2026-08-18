@@ -41,4 +41,4 @@ company.add_employee(Employee(102, "Aman", 55000))
 company.add_employee(Employee(103, "Riya", 35000))
 
 # Display all employees
-company.display_all
+company.display_all()
