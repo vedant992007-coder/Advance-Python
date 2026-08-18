@@ -42,22 +42,3 @@ company.add_employee(Employee(103, "Riya", 35000))
 
 # Display all employees
 company.display_all()
-
-'''output 
-Employee Information
-===================================
-Employee ID : 101
-Name        : Rahul
-Salary      : ₹ 75000
-Category    : High Salary
------------------------------------
-Employee ID : 102
-Name        : Aman
-Salary      : ₹ 55000
-Category    : Medium Salary
------------------------------------
-Employee ID : 103
-Name        : Riya
-Salary      : ₹ 35000
-Category    : Low Salary
------------------------------------ '''
