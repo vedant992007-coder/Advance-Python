@@ -25,8 +25,3 @@ str2 = input("Enter second string: ")
 result = longest_common_substring(str1, str2)
 
 print("Length of Longest Common Substring:", result)
-
-'''output:
-Enter first string: abcde
-Enter second string: apqbc
-Length of Longest Common Substring: 2  '''
