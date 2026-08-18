@@ -55,31 +55,3 @@ file.close()
 print("Data written to newfile.txt successfully.")
 
 print("\nAll file handling operations completed.")
-
-#Output
-"""
-1. WRITE OPERATION
-Data written successfully.
-
-2. READ OPERATION
-Hello, this is a Python file.
-This is an example of file handling.
-
-3. READLINE() OPERATION
-Hello, this is a Python file.
-
-4. READLINES() OPERATION
-['Hello, this is a Python file.\n', 'This is an example of file handling.']
-
-5. READ FILE LINE BY LINE
-Hello, this is a Python file.
-This is an example of file handling.
-
-6. APPEND OPERATION
-Data appended successfully.
-
-7. WRITE OPERATION
-Data written to newfile.txt successfully.
-
-All file handling operations completed.
-"""
